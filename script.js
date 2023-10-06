@@ -116,3 +116,120 @@
 //     console.log(`John has a higher BMI of ${johnBMI}`);
 // }
 
+
+// challenge solution
+// There are two gymnastics teams, Dolphins and Koalas. They compete against each
+// other 3 times. The winner with the highest average score wins a trophy!
+
+// Your tasks:
+
+// 1. Calculate the average score for each team, using the test data below
+// 2. Compare the team's average scores to determine the winner of the competition,
+// and print it to the console. Don't forget that there can be a draw, so test for that
+// as well (draw means they have the same average score)
+// 3. Bonus 1: Include a requirement for a minimum score of 100. With this rule, a
+// team only wins if it has a higher score than the other team, and the same time a
+// score of at least 100 points. Hint: Use a logical operator to test for minimum
+// score, as well as multiple else-if blocks 😉
+// 4. Bonus 2: Minimum score also applies to a draw! So a draw only happens when
+// both teams have the same score and both have a score greater or equal 100
+// points. Otherwise, no team wins the trophy
+
+// Test data:
+
+// Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
+// Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
+// Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
+// const dolpAvgScore = (96 + 108 +  89) / 3;
+// const KoaAvgScore = (96 + 108 + 89) / 3;
+// console.log( dolpAvgScore, KoaAvgScore);
+
+// if(dolpAvgScore > KoaAvgScore){
+//     console.log("team dolphin wins");
+// }else if(dolpAvgScore === KoaAvgScore){
+//     console.log("both team draws");
+// }else{
+//     console.log('team koala wins');
+// }
+
+// bonus part
+// if(dolpAvgScore > KoaAvgScore && dolpAvgScore >= 100 ){
+//     console.log("team dolphin wins");
+// }else if (KoaAvgScore > dolpAvgScore && KoaAvgScore >= 100 ){
+//     console.log("team koala wins");
+// }else if( dolpAvgScore === KoaAvgScore && dolpAvgScore >= 100 && KoaAvgScore >= 100){
+//     console.log("it was a draw");
+// }else{
+//     console.log('no winner');
+// }
+
+// type conversion and type coercion
+// type conversion(manual)
+// const currentYear = '2023';
+// console.log(typeof currentYear, currentYear);
+// console.log(String(currentYear));
+// console.log(Number(currentYear));
+
+
+// type coercion
+// console.log("i'm a" + 20 + "years old student");
+// console.log('19' - 23 + 2);
+
+// falsy values are: zero (0), empty string ("" or ''), undefined, null and NaN(NOT A NUMBER)
+
+// console.log(23, Boolean(23));
+// console.log(0, Boolean(0));
+
+// const myname = 'Temitope';
+// console.log(myname, Boolean(myname));
+
+// let accountBalance;
+// if(accountBalance){
+//     console.log('ODOGWU!!');
+// }else{
+//     console.log("HUSTLE OO!");
+// }
+
+// const energy = true;
+// const gas = false;
+
+// if(energy && gas){
+//  console.log('cook noodles');
+// }else if(energy && !gas){
+//     console.log('warm spag');
+// }else{
+//     console.log('take cornflakes');
+// }
+
+// equality operator
+// "=" for value assignment 
+// "==" is a loose operator
+// "===" is a strict operator
+
+//loose operator "=="
+// const age = String(22);
+// if(age === 22){
+//     console.log("welcome to adulthood");
+// }else{
+//     console.log('you are very young');
+// }
+
+// boolean logical operator
+// and (&&), or (||) , not (!)
+// const anAdult = true;
+// const locationLagos = true;
+// const completeNysc = false;
+
+// if(kayAge > 18 && locationLagos && completeNysc){
+//     console.log("congratulations, you got the job!🎉");
+// }else if(kayAge > 18 || locationLagos || completeNysc){
+//     console.log('You were so close!');
+// }else{
+//     console.log('You didnt meet any of the requirements!');
+// }
+// if(anAdult && locationLagos && !completeNysc){
+//     console.log("congratulations, you got the job!🎉");
+// }else{
+//     console.log('You didnt meet any of the requirements!');   
+// }
+
