@@ -1,3 +1,4 @@
+'use strict';
 // const job = 'Frontend';
 // if(job === 'Accountant') {
 //     alert('victor is a frontend engineer!')
@@ -231,5 +232,139 @@
 //     console.log("congratulations, you got the job!🎉");
 // }else{
 //     console.log('You didnt meet any of the requirements!');   
+// 
+// switch statement
+const tasks = 'morning';
+
+// if(tasks === 'morning'){
+//     console.log('pray, meditate and check email');
+// }else if(tasks === 'afternoon'){
+//     console.log('code, meetings, lunch, prepare for class')
+// }else if(tasks === 'evening'){
+//     console.log('classes, meeting, code, write')
+// }else{console.log('code, movies, eat, video games')}
+
+// switch(tasks) {
+//     case 'morning':
+//         console.log('pray, meditate and check email') ;
+//     ;
+//     break;
+//     case 'afternoon':
+//         console.log('code, meetings, lunch, prepare for class');
+//     ;
+//     break;
+//     case 'evening': 
+//        console.log('classes, meeting, code, write');
+//     ;
+//     break;
+//     default:
+//         console.log('code, movies, eat, video games');
+//     ;
 // }
+//  expressions and statement
+// console.log("temitope");
+// const myname = 'temtiope';
+// console.log(myname);
+
+// const logic = true && false && true;
+// console.log(logic);
+
+// const about = if(logic){
+//     console.log(2 + 3);
+// }else{
+//     console.log('not valid');
+// };
+
+// if(logic){
+//     console.log(2 + 3);
+// }else{
+//     console.log('not valid');
+// }
+
+// statemnets cant be inside an expression because they cant produce a value. however, an expression can be inside a statement
+
+// console.log(`my name is ${myname}. im a ${2023 - 1992} and ${
+//     if(logic){
+//         console.log(2 + 3);
+//     }else{
+//         console.log('not valid');
+//     }}`)
+
+// conditional operator / ternary operator
+// const age = 13;
+
+// if(age >= 18){
+//     console.log('old enough to take alcohol');
+// } else{
+//     console.log('you are too young')
+// }
+
+// const drink = age >= 18 ?  'red wine':  'fruit juice';
+// console.log(drink);
+
+// let serve;
+// if(age >= 18){
+//     serve = 'red wine';
+// }else {
+//     serve = 'fruit juice';
+// }
+
+//  console.log(serve)
+
+//  console.log(`i am old enough to take ${age >= 18 ?  'red wine':  'fruit juice'}`)
+
+// functions
+// function declaration
+function myfunc() {
+    console.log('my function runs');
+}
+
+// calling or running or invoking the function
+
+myfunc();
+myfunc();
+
+
+// everything about functions
+// function keyword, function name,open parenthesis, in the parentesis you put the parameters, open a curly 
+// bracket to add your code(code block),  write code in code block, return the code you want. close curly 
+// bracket. call function by calling the function name and open parenthesis and put the argument(the values 
+// of the parameters). save the function name along with the argument in a variable. now voew the variable 
+// in the console.
+function fruitProcessor(apple, oranges){
+    const fruitJuice = `my processor just made a juice containing ${apple} apples and ${oranges} oranges `;
+
+    return fruitJuice;
+}
+
+const juice = fruitProcessor(4, 8);
+console.log(juice);
+const thickjuice = fruitProcessor(8, 20);
+console.log(thickjuice);
+
+// function declaration
+function currentAge(birthYear){
+    const currentYear = 2023;
+    const userAge = currentYear - birthYear;
+    return userAge;
+}
+const age1 = currentAge(1998);
+console.log(age1);
+
+// function expression
+const currentAge2 = function (birthYear){
+    const currentYear = 2023;
+    const userAge = currentYear - birthYear;
+    return userAge;
+}
+const age2 = currentAge2(2002);
+console.log(age2)
+
+// console.log(myname);
+// const myname = 'temitope';
+
+
+
+
+
 
