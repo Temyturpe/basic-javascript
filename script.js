@@ -315,14 +315,14 @@ const tasks = 'morning';
 
 // functions
 // function declaration
-function myfunc() {
-    console.log('my function runs');
-}
+// function myfunc() {
+//     console.log('my function runs');
+// }
 
 // calling or running or invoking the function
 
-myfunc();
-myfunc();
+// myfunc();
+// myfunc();
 
 
 // everything about functions
@@ -331,37 +331,230 @@ myfunc();
 // bracket. call function by calling the function name and open parenthesis and put the argument(the values 
 // of the parameters). save the function name along with the argument in a variable. now voew the variable 
 // in the console.
-function fruitProcessor(apple, oranges){
-    const fruitJuice = `my processor just made a juice containing ${apple} apples and ${oranges} oranges `;
+// function fruitProcessor(apple, oranges){
+//     const fruitJuice = `my processor just made a juice containing ${apple} apples and ${oranges} oranges `;
 
-    return fruitJuice;
-}
+//     return fruitJuice;
+// }
 
-const juice = fruitProcessor(4, 8);
-console.log(juice);
-const thickjuice = fruitProcessor(8, 20);
-console.log(thickjuice);
+// const juice = fruitProcessor(4, 8);
+// console.log(juice);
+// const thickjuice = fruitProcessor(8, 20);
+// console.log(thickjuice);
 
 // function declaration
-function currentAge(birthYear){
-    const currentYear = 2023;
-    const userAge = currentYear - birthYear;
-    return userAge;
-}
-const age1 = currentAge(1998);
-console.log(age1);
+// function currentAge(birthYear){
+//     const currentYear = 2023;
+//     const userAge = currentYear - birthYear;
+//     return userAge;
+// }
+// const age1 = currentAge(1998);
+// console.log(age1);
 
 // function expression
-const currentAge2 = function (birthYear){
-    const currentYear = 2023;
-    const userAge = currentYear - birthYear;
-    return userAge;
-}
-const age2 = currentAge2(2002);
-console.log(age2)
+// const currentAge2 = function (birthYear){
+//     const currentYear = 2023;
+//     const userAge = currentYear - birthYear;
+//     return userAge;
+// }
+// const age2 = currentAge2(2002);
+// console.log(age2);
 
 // console.log(myname);
 // const myname = 'temitope';
+
+// arrow function
+// const currentAge = birthYear => 2023 - birthYear;
+// const age = currentAge(1998);
+
+// console.log(age);
+
+// const yearUntilRetirement = (birthYear, firstName) => {
+//     const age2 = 2023 - birthYear;
+//     const retirement = 65 - age2
+
+//     return `${firstName} has ${retirement} years to retire.`;
+// }
+// console.log(yearUntilRetirement(1980, 'Richard'));
+// console.log(yearUntilRetirement(1995, 'Victor'));
+
+// functions calling functions
+// juicemaker that has a fruitcutter 
+
+// const fruitcutter = fruit => {
+//     return fruit * 4;
+// }
+// fruitcutter(3)
+
+// const juicemaker = (apple, orange, firstName) => {
+//    const applepieces = fruitcutter(apple);
+//    const orangePieces = fruitcutter(orange);
+
+//    const Juice = `${firstName} made a juice with ${applepieces} pieces of apples and ${orangePieces} pieces of orange`;
+//  return Juice;
+// }
+
+// function declaration
+// function fruitcutter(fruit){
+//     return fruit * 4;
+// }
+
+// console.log(juicemaker(4, 2, 'Victor'));
+// console.log(juicemaker(10, 12, 'Richard'));
+// console.log(juicemaker(9, 3, 'Kayode'));
+
+// const yearUntilRetirement = (birthYear, firstName) => {
+//     const age2 = 2023 - birthYear;
+//     const retirement = 65 - age2
+
+//     return `${firstName} has ${retirement} years to retire.`;
+// }
+// console.log(yearUntilRetirement(1980, 'Richard'));
+// console.log(yearUntilRetirement(1995, 'Victor'));
+
+// const calcAge = birthYear => 2023 - birthYear;
+
+// const yearUntilRetirement = function (birthYear, firstName){
+//   const age = calcAge(birthYear);
+//   const retirement = 65 - age;
+
+  
+//   if(retirement > 0){
+//     console.log(`${firstName} has ${retirement}years to retire, He is ${age}years old`)
+//     return retirement;
+//   }else{
+//     console.log(`${firstName} has retired 🙌, He is ${age}years old`)
+//     return retirement;
+//   }
+
+// }
+// console.log(yearUntilRetirement(1944, 'Richard'));
+
+
+// data structuring
+// arrays
+
+// const student1 = 'Victor';
+// const student2 = 'Richard';
+// const student3 = 'Kayode';
+
+// console.log(student1, student2, student3);
+
+// const students = ['Victor', 'Richard', 'Kayode', 1998, 1989, true, false ];
+// console.log(students);
+// console.log(students[2]);
+// console.log(students.length);
+// console.log(students[students.length - 1]);
+
+
+// const students2 = new Array('Victor', 'Richard', 'Kayode');
+// console.log(students2);
+
+// PUSH for adding values at the end of an array
+// const student2 = students.push('ayode');
+// console.log(student2);
+
+// unshift for adding values at the beginning
+// const student3 = students.unshift("Temitope");
+// console.log(students);
+
+// pop used to remove the last value
+// const student4 = students.pop();
+// console.log(students);
+
+// shift used to remove the first element
+// const student5 = students.shift();
+// console.log(students);
+
+// indexOf is used to check the position of a value in an array
+// console.log(students.indexOf('Richard'));
+
+
+// includes is used to check if a value is in an array. it returns a boolean value.
+// console.log(students.includes('Temitope'));
+
+
+
+
+// if(students.includes('Temitope')){
+//     console.log('you have a student called victor')
+// } else{
+//     console.log('this person is not your student')
+// }
+
+
+// bills (richard: 150, victor: 100, kayode: 220, ayode: 250 )
+// calculate tip( using rule: anything between 50 and 200 pays 15% tip, anything between 200 and 400 pays 20% tip)
+// calculate total bill
+
+// const tipCalc = function(bill){
+//     return bill >= 50 && bill <= 200 ? bill * 0.15 : bill * 0.2;
+// }
+
+// const bills = [150, 100, 220, 250];
+// const tips = [tipCalc(bills[0]), tipCalc(bills[1]), tipCalc(bills[2]), tipCalc(bills[3])];
+// console.log(tips);
+// const bills2 = bills.push(300);
+// console.log(bills);
+// const tips2 = [tipCalc(bills[0]), tipCalc(bills[1]), tipCalc(bills[2]), tipCalc(bills[3]), tipCalc(bills[4])];
+// console.log(tips2);
+// const tips2 = tips.push(tipCalc(bills[4]));
+// console.log(tips);
+
+// const totalBills = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2], bills[3] + tips[3], bills[4] + tips[4] ];
+// console.log(totalBills);
+
+// console.log(bills[0]);
+
+
+// tipCalc(150)
+
+
+// const Ktip = tipCalc(220);
+// console.log(Ktip);
+// const Vtip = tipCalc(100);
+// console.log(Vtip);
+// const Rtip = tipCalc(150);
+// console.log(Rtip);
+// const Atip = tipCalc(250);
+// console.log(Atip);
+
+// objects
+const Richard = [
+    'Richard',
+    'Gboyega',
+    2023 - 1998,
+    'Frontend developer',
+    ['Victor', 'Kayode', 'Ayoade']
+];
+const friend = Richard[4];
+console.log(friend[1]);
+console.log(Richard);
+
+const Richard2 = {
+    first: 'Richard',
+    last: 'Gboyega',
+    age: 2023 - 1998,
+    job: 'Frontend developer',
+    friends: ['Victor', 'Kayode', 'Ayoade']
+}
+const nameKey = 'Name';
+
+console.log(Richard2)
+// dot notation
+console.log(Richard2.friends[1]);
+
+// bracket notation
+// console.log(Richard2['lastName']);
+// console.log(Richard2.lastName);
+
+
+console.log(Richard2['first' + nameKey]);
+console.log(Richard2['last' + nameKey]);
+
+
+
+
 
 
 
